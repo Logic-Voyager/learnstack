@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LearnHub - Empower Your Learning</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">LearnHub</div>
+    <nav>
+      <ul>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Teach</a></li>
+        <li><a href="documentation.html">Docs</a></li>
+        <li><a href="#" id="openLogin">Sign In</a></li>
+        <li><button class="join-btn">Join for Free</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Learn the skills to succeed in today’s world</h1>
+      <input type="text" placeholder="Try 'Python for Beginners'" />
+      <button class="search-btn">Search</button>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <h2>Popular Subjects</h2>
+    <div class="category-grid">
+      <div class="category-card">Programming</div>
+      <div class="category-card">Data Science</div>
+      <div class="category-card">Design</div>
+      <div class="category-card">Marketing</div>
+    </div>
+  </section>
+
+  <!-- Featured Courses -->
+  <section class="gigs">
+    <h2>Featured Courses</h2>
+    <div class="gig-grid">
+      <div class="gig-card">
+        <img src="https://via.placeholder.com/300x200" alt="Course" />
+        <p>Python Programming: From Zero to Hero</p>
+        <strong>Free</strong>
+      </div>
+      <div class="gig-card">
+        <img src="https://via.placeholder.com/300x200" alt="Course" />
+        <p>Master Web Development with Projects</p>
+        <strong>₹499</strong>
+      </div>
+      <div class="gig-card">
+        <img src="https://via.placeholder.com/300x200" alt="Course" />
+        <p>Digital Marketing Bootcamp</p>
+        <strong>₹799</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Sign In to LearnHub</h2>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <p id="loginMessage"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 LearnHub. Empowering Learners Everywhere.</p>
+  </footer>
+
+  <script>
+    const modal = document.getElementById("loginModal");
+    const openBtn = document.getElementById("openLogin");
+    const closeBtn = document.getElementById("closeModal");
+
+    openBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      modal.style.display = "flex";
+    });
+
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+
+    document.getElementById("loginForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      const res = await fetch("/api/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const message = document.getElementById("loginMessage");
+      if (res.ok) {
+        message.textContent = "Login successful!";
+        message.style.color = "green";
+        setTimeout(() => (modal.style.display = "none"), 1000);
+      } else {
+        message.textContent = "Invalid email or password.";
+        message.style.color = "red";
+      }
+    });
+  </script>
+</body>
+</html>

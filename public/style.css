@@ -1,0 +1,359 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1dbf73;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.join-btn {
+  background-color: #1dbf73;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1543269865-cbf427effbad') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero input {
+  width: 70%;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-btn {
+  padding: 0.7rem 1rem;
+  margin-left: 0.5rem;
+  border: none;
+  background-color: #1dbf73;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+/* Docs Layout */
+/* ===== Documentation Page Styling ===== */
+/* ======= DOCUMENTATION PAGE IMPROVEMENTS ======= */
+/* ======= LearnHub Documentation Styling ======= */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fdfb;
+}
+
+/* ====== Header ====== */
+.docs-header {
+  background: linear-gradient(to right, #e6f9ef, #f0fff7);
+  text-align: center;
+  padding: 3rem 2rem;
+  border-bottom: 3px solid #1dbf73;
+}
+
+.docs-header h1 {
+  font-size: 2.8rem;
+  color: #1dbf73;
+  margin-bottom: 0.5rem;
+}
+
+.docs-header p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* ====== Container Layout ====== */
+.docs-container {
+  display: flex;
+  padding: 2rem 5%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* ====== Sidebar ====== */
+.docs-sidebar {
+  flex: 1;
+  min-width: 220px;
+  background-color: #f6fff9;
+  border: 1px solid #cceedd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  position: sticky;
+  top: 1rem;
+  height: fit-content;
+}
+
+.docs-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.docs-sidebar li {
+  margin-bottom: 1rem;
+}
+
+.docs-sidebar a {
+  display: block;
+  text-decoration: none;
+  color: #1dbf73;
+  font-weight: 600;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  transition: background 0.2s ease-in-out;
+}
+
+.docs-sidebar a:hover,
+.docs-sidebar a:focus {
+  background-color: #e1f7eb;
+  color: #159f5c;
+}
+
+/* ====== Content Area ====== */
+.docs-content {
+  flex: 3;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #e5f3eb;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+}
+
+.docs-content article {
+  margin-bottom: 2rem;
+}
+
+.docs-content h2 {
+  color: #1dbf73;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #1dbf73;
+  padding-bottom: 0.4rem;
+  margin-top: 2rem;
+}
+
+.docs-content h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.docs-content p {
+  color: #333;
+  line-height: 1.7;
+  margin: 0.8rem 0;
+}
+
+.docs-content a {
+  color: #1dbf73;
+  text-decoration: underline;
+}
+
+.docs-content strong {
+  color: #222;
+}
+
+/* ====== Code Blocks ====== */
+.docs-content pre {
+  background-color: #f4f8f7;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-top: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  border-left: 4px solid #1dbf73;
+}
+
+.docs-content code {
+  display: block;
+  white-space: pre-wrap;
+}
+
+/* ====== Videos ====== */
+.docs-content iframe {
+  width: 100%;
+  max-width: 640px;
+  height: 360px;
+  border-radius: 6px;
+  margin: 1.5rem 0;
+  border: none;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+  .docs-container {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .docs-sidebar,
+  .docs-content {
+    width: 100%;
+  }
+
+  .docs-content iframe {
+    height: 250px;
+  }
+}
+
+
+
+
+
+/* Categories */
+.categories {
+  padding: 2rem;
+  background-color: white;
+}
+
+.category-grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.category-card {
+  background-color: #1dbf73;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+}
+
+/* Gigs */
+.gigs {
+  padding: 2rem;
+}
+
+.gig-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.gig-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.gig-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Login Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #1dbf73;
+  text-align: center;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #1dbf73;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Documentation | LearnHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">LearnHub</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Teach</a></li>
+        <li><a href="documentation.html">Docs</a></li>
+        <li><a href="#" id="signInBtn">Sign In</a></li>
+        <li><button class="join-btn">Join</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Documentation Header -->
+  <section class="docs-header">
+    <h1>📚 LearnHub Documentation</h1>
+    <p>Everything you need to navigate and succeed on our platform.</p>
+  </section>
+
+  <!-- Documentation Container -->
+  <section class="docs-container">
+    <!-- Sidebar -->
+    <aside class="docs-sidebar">
+      <ul>
+        <li><a href="#getting-started">Data Structure & Algorithm</a></li>
+        <li><a href="#become-instructor">Definition</a></li>
+        <li><a href="#course-guidelines">Input Output</a></li>
+        <li><a href="#technical-help">Videos</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+        <li><a href="#contact-support">Contact Support</a></li>
+      </ul>
+    </aside>
+
+    <!-- Content -->
+    <main class="docs-content">
+      <article id="getting-started">
+        <h2>ARRAYS</h2>
+        <p>Arrays are a fundamental data structure in programming, used to store multiple values in a single variable.</p>
+      </article>
+
+      <article id="become-instructor">
+        <h2>DEFINITION</h2>
+        <p>An array is a collection of elements, each identified by an index or a key. It is used to store multiple values of the same type.</p>
+      </article>
+
+      <article id="course-guidelines">
+        <h2>CODE I/O</h2>
+        <p>Example 1: Declaring and Initializing an Array in JAVA.</p>
+        <pre><code>
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[5] = {1, 2, 3, 4, 5};
+    for (int i = 0; i < 5; i++) {
+        cout << arr[i] << " ";
+    }
+    return 0;
+}
+        </code></pre>
+        <h3>Example 2: Accessing an Array in JAVA</h3>
+        <pre><code>
+# Initializing an array
+arr = [1, 2, 3, 4, 5]
+# Printing array elements
+for num in arr:
+    print(num, end=" ")
+        </code></pre>
+
+      </article>
+
+      <article id="technical-help">
+        <h2>Videos</h2>
+        <h3>Understanding Arrays</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+        <h3>Working with Arrays in C++</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+
+      </article>
+
+      <article id = "faq">
+        <h2>FAQ</h2>
+        <p><strong>Q: What is the index of the first element in an array?</strong><br>A: In most programming languages, the first element has an index of 0.</p>
+      </article>
+
+      <article id="contact-support">
+        <h2>Contact Support</h2>
+        <p>Need assistance? Email us at <a href="mailto:support@learnhub.com">support@learnhub.com</a>.</p>
+      </article>
+    </main>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 LearnHub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
