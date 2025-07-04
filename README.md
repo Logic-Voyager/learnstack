@@ -30,7 +30,7 @@
 
   <h2>📸 Demo & Links</h2>
   <ul>
-    <li>🌐 <strong>Live Site:</strong> <a href="https://learnstack.netlify.app" target="_blank">https://learnstack.netlify.app</a></li>
+    <li>🌐 <strong>Live Site:</strong> <a href="https://stacklearn.netlify.app" target="_blank">https://stacklearn.netlify.app</a></li>
     <li>💾 <strong>Source Code:</strong> <a href="https://github.com/Logic-Voyager/learnstack" target="_blank">https://github.com/Logic-Voyager/learnstack</a></li>
   </ul>
 
