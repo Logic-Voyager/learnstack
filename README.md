@@ -16,7 +16,7 @@
   <h2>🛠️ Tech Stack</h2>
   <ul>
     <li><strong>Frontend:</strong> HTML, CSS, JavaScript (ES6)</li>
-    <li><strong>Hosting & Forms:</strong> Netlify</li>
+    <li><strong>Hosting:</strong> Netlify</li>
     <li><strong>Version Control:</strong> Git & GitHub</li>
   </ul>
 
